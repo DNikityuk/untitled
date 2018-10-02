@@ -4,20 +4,22 @@ public class Main {
         return "Я новый метод toSting";
     }
     private int in=0;
-    String getMessage(){
+    private String getMessage(){
         return "fasdfjkdfj;as";
     }
-    void setIn(int in){
+    private void setIn(int in){
         this.in = in;
     }
-    int getIn(){
+    private int getIn(){
         return in;
     }
 
     public static void main(String[] args){
         System.out.println("Hello");
-        System.out.print(new Main().toString());
-        System.out.print(new Main().getMessage());
-        System.out.print(new Main().getIn());
+        System.out.println(new Main().toString());
+        System.out.println(new Main().getMessage());
+        Main var = new Main();
+        var.setIn(8);
+        System.out.println(var.getIn());
     }
 }
